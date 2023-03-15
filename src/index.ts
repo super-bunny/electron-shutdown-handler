@@ -7,7 +7,7 @@ const SUPPORTED_PLATFORMS = ['win32'];
 let addon: Addon | null = null;
 
 if (SUPPORTED_PLATFORMS.includes(process.platform)) {
-	addon = require('../build/Release/PaymoWinShutdownHandler.node'); // eslint-disable-line import/no-dynamic-require
+	addon = require('../build/Release/WindowsShutdownHandler.node'); // eslint-disable-line import/no-dynamic-require
 }
 
 class ElectronShutdownHandlerClass extends EventEmitter {

@@ -1,11 +1,10 @@
 {
   "name": "@super-bunny/electron-shutdown-handler",
-  "version": "1.0.14",
+  "version": "1.0.18",
   "description": "Handle shutdown messages on windows in your electron app and delay system shutdown",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "node install.js",
     "install:win32": "prebuild-install -r napi || node-gyp rebuild",
     "demo": "electron demo/electron.js --no-sandbox",
     "clean": "node-gyp clean && rimraf dist",
@@ -28,10 +27,8 @@
     ]
   },
   "files": [
-    "binding.gyp",
-    "install.js",
     "dist/",
-    "module/"
+    "build/Release/WindowsShutdownHandler.node"
   ],
   "repository": {
     "type": "git",

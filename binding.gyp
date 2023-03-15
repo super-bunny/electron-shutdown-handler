@@ -1,7 +1,7 @@
 {
 	"targets": [
 		{
-			"target_name": "PaymoWinShutdownHandler",
+			"target_name": "WindowsShutdownHandler",
 			"conditions": [
 				["OS=='win'", {
 					"sources": [
