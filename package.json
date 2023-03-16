@@ -1,5 +1,5 @@
 {
-  "name": "@paymoapp/electron-shutdown-handler",
+  "name": "@super-bunny/electron-shutdown-handler",
   "version": "1.0.14",
   "description": "Handle shutdown messages on windows in your electron app and delay system shutdown",
   "main": "dist/index.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "install": "node install.js",
     "install:win32": "prebuild-install -r napi || node-gyp rebuild",
-    "demo": "node_modules\\electron\\dist\\electron.exe demo/electron.js --no-sandbox",
+    "demo": "electron demo/electron.js --no-sandbox",
     "clean": "node-gyp clean && rimraf dist",
     "build": "npm run clean && npm run build:ts && npm run build:gyp",
     "build:ts": "tsc",
@@ -35,7 +35,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/paymoapp/electron-shutdown-handler.git"
+    "url": "git+https://github.com/super-bunny/electron-shutdown-handler.git"
   },
   "keywords": [
     "electron",
@@ -43,12 +43,15 @@
     "shutdown",
     "delay"
   ],
-  "author": "Paymo LLC",
+  "author": {
+    "name": "Clovis de Villars",
+    "email": "clovis.devillars@gmail.com"
+  },
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/paymoapp/electron-shutdown-handler/issues"
+    "url": "https://github.com/super-bunny/electron-shutdown-handler/issues"
   },
-  "homepage": "https://github.com/paymoapp/electron-shutdown-handler#readme",
+  "homepage": "https://github.com/super-bunny/electron-shutdown-handler#readme",
   "devDependencies": {
     "@types/node": "^18.7.14",
     "@typescript-eslint/eslint-plugin": "^5.36.1",
